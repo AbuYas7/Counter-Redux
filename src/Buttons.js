@@ -22,6 +22,7 @@ const Buttons = () => {
   const randomNumber = () => {
     dispatch({
       type: "Random",
+      payload: Math.ceil(Math.random() * 50),
     });
   };
 

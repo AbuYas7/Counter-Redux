@@ -28,7 +28,7 @@ const reducer = (state = defaultStore, action) => {
     case "Random":
       return {
         ...state,
-        number: state.number + Math.random(),
+        number: state.number + action.payload,
       };
     default:
       return state;
